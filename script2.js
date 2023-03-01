@@ -1,6 +1,3 @@
-$('.message a').click(function(){
-   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-});
 
 
 const loginBtn = document.querySelector('.login-form button');
