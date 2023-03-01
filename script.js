@@ -96,3 +96,24 @@ blogPosts.addEventListener('click', (e) => {
     });
   }
 });
+
+// login
+
+// Hide the blog content and form on page load
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.blog-container').style.display = 'none';
+  document.querySelector('#blog-form').style.display = 'none';
+});
+
+// Add event listener to the login button to show the blog content and form
+document.querySelector('.login-form button').addEventListener('click', function() {
+  // Hide the login page
+  document.querySelector('.login-page').style.display = 'none';
+  
+  // Show the blog content and form
+  document.querySelector('.blog-container').style.display = 'block';
+  document.querySelector('#blog-form').style.display = 'block';
+});
+
+
+// login
