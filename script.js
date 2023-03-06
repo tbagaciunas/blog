@@ -99,13 +99,13 @@ blogPosts.addEventListener('click', (e) => {
 
 // login
 
-// Hide the blog content and form on page load
+// Hide  blog 
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.blog-container').style.display = 'none';
   document.querySelector('#blog-form').style.display = 'none';
 });
 
-// Add event listener to the login button to show the blog content and form
+//  event listener 
 document.querySelector('.login-form button').addEventListener('click', function() {
   // Hide the login page
   document.querySelector('.login-page').style.display = 'none';
@@ -117,25 +117,25 @@ document.querySelector('.login-form button').addEventListener('click', function(
 
 let isLoggedIn = false;
 
-// Hide the blog content and form on page load if the user is not logged in
+// Hide  blog 
 if (!isLoggedIn) {
   document.querySelector('.blog-container').style.display = 'none';
   document.querySelector('#blog-form').style.display = 'none';
 }
 
-// Add event listener to the login button to show the blog content and form if the user is not logged in
+//  event listener 
 document.querySelector('.login-form button').addEventListener('click', function(event) {
-  // Prevent the form from submitting and the page from reloading
+ 
   event.preventDefault();
 
-  // Hide the login page
+ 
   document.querySelector('.login-page').style.display = 'none';
 
-  // Show the blog content and form
+
   document.querySelector('.blog-container').style.display = 'block';
   document.querySelector('#blog-form').style.display = 'block';
 
-  // Set the isLoggedIn variable to true to stop the code from running
+
   isLoggedIn = true;
 });
 // login
